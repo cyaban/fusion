@@ -278,5 +278,24 @@
         document.getElementById("appname").innerHTML = localStorage.getItem('appname')
     </script>
 </div>
->
+<div class="widget1 activite">
+    <div class="text5">Recently Played</div>
+    <div class="activity">
+        <a id="staturl" href="#">
+            <div id="image" class="imgcont"></div>
+            <div id="appname" class="appname"></div>
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var clickedApp = JSON.parse(localStorage.getItem('clickedApp'));
+
+    if (clickedApp) {
+        document.getElementById("image").style.backgroundImage = "url('" + clickedApp.image + "')";
+        document.getElementById("staturl").href = clickedApp.staturl;
+        document.getElementById("appname").innerHTML = clickedApp.appname;
+    }
+</script>
+
 
