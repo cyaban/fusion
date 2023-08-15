@@ -264,30 +264,6 @@
 <script src="unpkg.com_swiper@7.3.1_swiper-bundle.min.js"></script>
     <script src="/HOME/GAME PAGE/games.js"></script>      
 </body>
-</html<div class="widget1 activite">
-    <div class="text5">Reprendre son activité</div>
-    <div class="activity">
-        <a id="staturl" href>
-            <div id="image" class="imgcont"></div>
-            <div id="appname" class="appname"></div>
-        </a>
-    </div>
-    <script type="fd82b8db63698499343609bb-text/javascript">
-        document.getElementById("image").style="background-image: url('" + localStorage.getItem('image') + "')";
-        document.getElementById("staturl").href= localStorage.getItem('staturl');
-        document.getElementById("appname").innerHTML = localStorage.getItem('appname')
-    </script>
-</div>
-<div class="widget1 activite">
-    <div class="text5">Recently Played</div>
-    <div class="activity">
-        <a id="staturl" href="#">
-            <div id="image" class="imgcont"></div>
-            <div id="appname" class="appname"></div>
-        </a>
-    </div>
-</div>
-
 <script type="text/javascript">
     var clickedApp = JSON.parse(localStorage.getItem('clickedApp'));
 
@@ -295,6 +271,17 @@
         document.getElementById("image").style.backgroundImage = "url('" + clickedApp.image + "')";
         document.getElementById("staturl").href = clickedApp.staturl;
         document.getElementById("appname").innerHTML = clickedApp.appname;
+    }
+</script>
+<script type="text/javascript">
+    var clickedBox = JSON.parse(localStorage.getItem('box'));
+
+    if (clickedBox) {
+        var boxTextElement = document.querySelector('.box-text');
+
+        boxTextElement.style.backgroundImage = "url('" + clickedBox.image + "')";
+        boxTextElement.querySelector('a').href = clickedBox.staturl;
+        boxTextElement.querySelector('.appname').innerHTML = clickedBox.appname;
     }
 </script>
 
