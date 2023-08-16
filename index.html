@@ -234,13 +234,6 @@
             <a href="./iframe.html" onclick="localStorage.setItem('iframeurl', 'embed.html#https://mathgames66.github.io/837e973c-c2fe-4a6d-bd88-697962031ef3/content/w8.snokido.com/games/html5/awesome-tanks-2/index.html'); localStorage.setItem('staturl', './iframe.html')" class="box-btn"><i class="fa-solid fa-download"></i></a>
         </div>
     </div>
-<div class="box">
-    <img src="https://assets-prd.ignimgs.com/2023/03/01/subwaysurfers-1677630205274.jpg" alt="">
-    <div class="box-text">
-        <h2>Subway Surfers</h2>
-        <h3>Action</h3>
-        <a href="./iframe.html" onclick="localStorage.setItem('iframeurl', 'embed.html#https://bloxd.io'); localStorage.setItem('staturl', './iframe.html')" class="box-btn"><i class="fa-solid fa-download"></i></a>
-    </div>
 </div>
 
   <div class="next-page">
@@ -264,25 +257,6 @@
 <script src="unpkg.com_swiper@7.3.1_swiper-bundle.min.js"></script>
     <script src="/HOME/GAME PAGE/games.js"></script>      
 </body>
-<script type="text/javascript">
-    var clickedApp = JSON.parse(localStorage.getItem('clickedApp'));
 
-    if (clickedApp) {
-        document.getElementById("image").style.backgroundImage = "url('" + clickedApp.image + "')";
-        document.getElementById("staturl").href = clickedApp.staturl;
-        document.getElementById("appname").innerHTML = clickedApp.appname;
-    }
-</script>
-<script type="text/javascript">
-    var clickedBox = JSON.parse(localStorage.getItem('box'));
-
-    if (clickedBox) {
-        var boxTextElement = document.querySelector('.box-text');
-
-        boxTextElement.style.backgroundImage = "url('" + clickedBox.image + "')";
-        boxTextElement.querySelector('a').href = clickedBox.staturl;
-        boxTextElement.querySelector('.appname').innerHTML = clickedBox.appname;
-    }
-</script>
 
 
